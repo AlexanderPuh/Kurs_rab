@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox id="back" maxHeight="705.0" maxWidth="1375.0" minHeight="705.0" minWidth="1375.0" prefHeight="705.0" prefWidth="1375.0" style="-fx-background-image: url(sample/back.jpg);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <HBox prefHeight="122.0" prefWidth="600.0">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <children>
+                <Text fill="WHITE" stroke="#00000021" strokeType="OUTSIDE" strokeWidth="3.0" text="Добро пожаловать!" wrappingWidth="678.728515625">
+                    <font>
+                        <Font name="Trebuchet MS Italic" size="48.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="20.0" left="70.0" right="70.0" top="70.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+      <AnchorPane prefHeight="310.0" prefWidth="1375.0">
+         <children>      <Button defaultButton="true" mnemonicParsing="false" style="-fx-opaque-insets: 0;" layoutX="600.0" layoutY="25.0" onAction="#User">
+               <graphic>
+                  <ImageView fitHeight="213.0" fitWidth="260.0" layoutX="940.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+    <Button defaultButton="true" mnemonicParsing="false" style="-fx-opaque-insets: 0;" layoutX="1045.0" layoutY="25.0" onAction="#Admin">
+              <graphic>
+             <ImageView fitHeight="227.0" fitWidth="197.0" layoutX="1008.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1008.0" AnchorPane.rightAnchor="170.0">
+               <image>
+                  <Image url="@admin.png" />
+               </image>
+            </ImageView>
+
+              </graphic>
+              <opaqueInsets>
+                  <Insets />
+              </opaqueInsets></Button>
+            <Text fill="WHITE" layoutX="642.0" layoutY="288.0" onTouchPressed="#Admin" stroke="#00000021" strokeType="OUTSIDE" strokeWidth="3.0" text="Студент">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="1008.0" layoutY="288.0" stroke="#21050521" strokeType="OUTSIDE" strokeWidth="3.0" text="Преподаватель" wrappingWidth="274.5390625">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text fill="WHITE" layoutX="718.0" layoutY="96.0" stroke="#07070721" strokeType="OUTSIDE" strokeWidth="3.0" text="Эта программа создана в обучающих целях, для развития русского языка у студентов ИПИГ" textAlignment="CENTER" wrappingWidth="513.8828125">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#fcfafa" layoutX="832.0" layoutY="192.0" stroke="#0a0a0a21" strokeType="OUTSIDE" strokeWidth="3.0" text="Chumakov(c) 2016" AnchorPane.leftAnchor="900.0" AnchorPane.rightAnchor="200.0">
+               <font>
+                  <Font name="Trebuchet MS" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+    </children>
+</VBox>

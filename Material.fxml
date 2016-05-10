@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox id="back" maxHeight="705.0" maxWidth="1375.0" minHeight="705.0" minWidth="1375.0" prefHeight="705.0" prefWidth="1375.0" style="-fx-background-image: url(sample/back.jpg);" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <HBox prefHeight="122.0" prefWidth="600.0">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <children>
+                <Text fill="WHITE" stroke="#00000021" strokeType="OUTSIDE" strokeWidth="3.0" text="Введите материал" wrappingWidth="678.728515625">
+                    <font>
+                        <Font name="Trebuchet MS Italic" size="48.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="20.0" left="70.0" right="70.0" top="70.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <AnchorPane prefHeight="352.0" prefWidth="1375.0">
+         <children>
+            <TextField fx:id="Topic" layoutX="75.0" layoutY="14.0" prefHeight="42.0" prefWidth="1226.0" promptText="Введите тему материала" />
+            <MenuButton layoutX="108.0" layoutY="300.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="190.0" style="-fx-background-color: #3c7fb1,        linear-gradient(#fafdfe, #e8f5fc),        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);; -fx-background-insets: 0,1,2;; -fx-background-radius: 3,2,1;; -fx-padding: 3 30 3 30;;" text="Прикрепить">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#AddImage" text="Add Image" />
+                  <MenuItem mnemonicParsing="false" text="Add Video" />
+                <MenuItem mnemonicParsing="false" text="Add Audio" />
+              </items>
+            </MenuButton>
+            <TextArea fx:id="Material" layoutX="75.0" layoutY="71.0" prefHeight="200.0" prefWidth="1226.0" promptText="Введите материал">
+               <font>
+                  <Font name="Trebuchet MS" size="14.0" />
+               </font>
+            </TextArea>
+            <Button defaultButton="true" layoutX="1076.0" layoutY="290.0" onAction="#BacktoMenu" mnemonicParsing="false" prefHeight="40.0" prefWidth="95.0" text="Назад" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS" size="14.0" />
+               </font>
+            </Button>
+            <Button defaultButton="true" layoutX="1204.0" layoutY="290.0" mnemonicParsing="false" onAction="#SaveMaterial" prefHeight="40.0" prefWidth="95.0" text="Сохранить" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="viewimage" fitHeight="96.0" fitWidth="107.0" layoutX="349.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                 <Image url="@admin.png" />
+             </image>
+         </ImageView>
+            <Label fx:id="post_material" layoutX="470.0" layoutY="307.0" prefHeight="40.0" prefWidth="587.0" textFill="#f80303">
+               <font>
+                  <Font name="Trebuchet MS Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="164.0" prefWidth="1375.0">
+            <children>
+                <Text fill="WHITE" layoutX="718.0" layoutY="43.0" stroke="#07070721" strokeType="OUTSIDE" strokeWidth="3.0" text="Эта программа создана в обучающих целях, для развития русского языка у студентов ИПИГ" textAlignment="CENTER" wrappingWidth="513.8828125">
+                    <font>
+                        <Font name="Trebuchet MS Italic" size="24.0" />
+                    </font>
+                </Text>
+                <Text fill="#fcfafa" layoutX="901.0" layoutY="156.0" stroke="#0a0a0a21" strokeType="OUTSIDE" strokeWidth="3.0" text="Chumakov(c) 2016" AnchorPane.leftAnchor="901.0" AnchorPane.rightAnchor="326.2998046875">
+                    <font>
+                        <Font name="Trebuchet MS" size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
